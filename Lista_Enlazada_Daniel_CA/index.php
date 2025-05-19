@@ -20,18 +20,19 @@
             $nuevoNodo = new Nodo($dato);
             $nuevoNodo->siguiente=$this->cabeza;
             $this->cabeza=$nuevoNodo;
-
+        }
+        
         public function imprimirHTML(){
             $actual = $this->cabeza;
             echo "<ul>";
 
             while($actual=!null) {
             echo "<li>".$actual ->dato."</li>";
+            $actual=$actual->siguiente;
             }
 
-            echo "</ul>"
-        }
-            
+            echo "</ul>";
+                    
         }
     }
 
