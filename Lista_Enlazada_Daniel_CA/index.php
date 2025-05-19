@@ -1,43 +1,46 @@
 <?php
-
-class Nodo {    
-public $dato;
-public $siguiente;
-public function __construct($dato) {
-$this->dato = $dato;
-$this->siguiente = null;
-}
-}
-
-class PrimeraLista{
-    public $cabeza;
-    public function __construct(){
-        $this->cabeza = null; 
+    class Nodo {
+        public $dato;
+        public $siguiente;
+        
+        public function __construct($dato) {
+            $this->dato = $dato;
+            $this->siguiente = null;
+        }
     }
 
-    public function insertar ($dato){
-        $nuevoNodo = new nodo($dato);
-        $nuevoNodo->siguiente=$this->cabeza;
-        $this->cabeza=$nuevoNodo;
+    class primeraLista {
+
+        public $cabeza;
+        public function __construct() {
+            $this->cabeza = null;
         }
+
+        public function insertar($dato) {
+            $nuevoNodo = new Nodo($dato);
+            $nuevoNodo->siguiente=$this->cabeza;
+            $this->cabeza=$nuevoNodo;
 
         public function imprimirHTML(){
             $actual = $this->cabeza;
-            echo"<ul>";
+            echo "<ul>";
 
-            while($actual!=null){
+            while($actual=!null) {
             echo "<li>".$actual ->dato."</li>";
-            $actual=$actual->siguiente;
             }
 
-            echo"</ul>";
+            echo "</ul>"
+        }
+            
+        }
+    }
 
-            }
-            }
-$lista = new PrimeraLista(); 
+$lista = new primeraLista()
 
-$lista->insertar("Capibara");
-$lista->insertar("Pajaro");
-$lista->insertar("Huron");
-$lista->imprimirHTML();
+$lista->insertar("Slowdive");
+$lista->insertar("Lush");
+$lista->insertar("My Bloody Valentine");
+
+$lista->imprimirHTML()
+
 ?>
