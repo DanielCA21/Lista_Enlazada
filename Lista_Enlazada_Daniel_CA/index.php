@@ -41,6 +41,12 @@ $lista = new primeraLista()
 $lista->insertar("Slowdive");
 $lista->insertar("Lush");
 $lista->insertar("My Bloody Valentine");
+$lista->insertar("No Joy");
+$lista->insertar("Flyying Colours");
+$lista->insertar("Seventeen Years Old And Berlin Wall");
+$lista->insertar("Capitol");
+$lista->insertar("Cocteau Twins");
+$lista->insertar("A.R. Kane");
 
 $lista->imprimirHTML()
 
