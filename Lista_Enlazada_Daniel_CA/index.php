@@ -36,7 +36,7 @@
         }
     }
 
-$lista = new primeraLista()
+$lista = new primeraLista();
 
 $lista->insertar("Slowdive");
 $lista->insertar("Lush");
@@ -48,6 +48,6 @@ $lista->insertar("Capitol");
 $lista->insertar("Cocteau Twins");
 $lista->insertar("A.R. Kane");
 
-$lista->imprimirHTML()
+$lista->imprimirHTML();
 
 ?>
