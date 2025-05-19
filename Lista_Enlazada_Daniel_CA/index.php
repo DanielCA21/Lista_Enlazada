@@ -26,7 +26,7 @@
             $actual = $this->cabeza;
             echo "<ul>";
 
-            while($actual=!null) {
+            while($actual!=null) {
             echo "<li>".$actual ->dato."</li>";
             $actual=$actual->siguiente;
             }
